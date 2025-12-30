@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Bloquear acesso a pastas de sistema se houver (opcional)
+Disallow: /admin/
+Disallow: /login/
+
+# Indicar onde está o mapa do site
+Sitemap: https://marketsite.com.br/sitemap.xml

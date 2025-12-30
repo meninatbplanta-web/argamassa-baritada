@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Carrinho de Cotação | Marketsite</title>
+    <meta name="description"
+        content="Reveja os itens da sua cotação de argamassa baritada e envie para nossos fornecedores.">
+    <link rel="canonical" href="https://www.marketsite.com.br/loja/carrinho.html" />
+    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        .cart-summary {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+        }
+
+        .cart-total {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--primary);
+            margin-bottom: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+
+        <header>
+        <div class="container header-container">
+            <a href="../index.html" class="logo">Argamassa<span> Baritada</span></a>
+
+            <button class="mobile-menu-btn" aria-label="Menu">☰</button>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="../index.html">Início</a></li>
+                    <li><a href="../central-do-projetista.html">Projetistas</a></li>
+                    <li><a href="../medicina-nuclear-radioterapia.html">Nuclear & MeV</a></li>
+                    <li><a href="../blindagem-industrial-end.html">Industrial</a></li>
+                    <li><a href="../calculadora-argamassa.html">Calculadora</a></li>
+                    <li><a href="../entrega-brasil.html">Entrega</a></li>
+                    <li><a href="index.html" style="color:var(--accent); font-weight:bold;">Loja</a></li>
+                    <li><a href="../index.html#cotacao" class="nav-cta">Pedir Cotação</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="section bg-white">
+            <div class="container">
+                <h1>Solicitação de Orçamento</h1>
+                <p>Confira os itens abaixo antes de enviar para os fornecedores.</p>
+
+                <div class="catalog-container" style="margin-top:2rem;">
+                    <!-- Cart Items -->
+                    <div style="flex:2;">
+                        <div class="table-container">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Produto</th>
+                                        <th>Item</th>
+                                        <th>Qtd.</th>
+                                        <th>Ref. Preço</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody id="cart-items-body">
+                                    <!-- Items injected by JS -->
+                                </tbody>
+                            </table>
+                        </div>
+                        <button class="btn" style="background:#ddd;" onclick="Cart.clear()">Limpar Carrinho</button>
+                    </div>
+
+                    <!-- Checkout Form -->
+                    <div style="flex:1;">
+                        <div class="cart-summary lead-form">
+                            <h2 class="text-center"
+                                style="font-size:1.5rem; border:none; margin-bottom:1rem; color:var(--primary);">Receba
+                                3 Orçamentos</h2>
+                            <form id="checkout-form" onsubmit="handleCheckout(event)">
+                                <div class="form-group">
+                                    <label for="nome">Seu Nome / Clínica</label>
+                                    <input type="text" id="nome" name="nome" class="form-control"
+                                        placeholder="Ex: Clínica Rd X" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="whatsapp">WhatsApp</label>
+                                    <input type="tel" id="whatsapp" name="whatsapp" class="form-control"
+                                        placeholder="(11) 99999-9999" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="area">Área a cobrir (m²)</label>
+                                    <input type="number" id="area" name="area" class="form-control"
+                                        placeholder="Ex: 40">
+                                </div>
+                                <div class="form-group">
+                                    <label for="urgencia">Urgência</label>
+                                    <select id="urgencia" name="urgencia" class="form-control">
+                                        <option value="imediata">Para ontem (Obra parada)</option>
+                                        <option value="15dias">Próximos 15 dias</option>
+                                        <option value="planejamento">Apenas cotação</option>
+                                    </select>
+                                </div>
+
+                                <hr style="margin: 1.5rem 0;">
+
+                                <button type="submit" class="btn btn-primary">COTAR AGORA ➤</button>
+
+                                <p style="font-size:0.8rem; margin-top:1rem; text-align:center;">
+                                    🔒 Seus dados estão seguros. Ao clicar, você será redirecionado para o WhatsApp da
+                                    nossa central com o pedido pronto.
+                                </p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+        <footer>
+        <div class="container">
+            <div class="grid-3" style="text-align:left; gap:2rem;">
+                <div>
+                    <h3 style="color:var(--accent); font-size:1.5rem; margin-bottom:1rem;">Sobre</h3>
+                    <ul style="list-style:none; padding:0; font-size:0.9rem;">
+                         <li><a href="../quem-somos.html" style="color:#bbb;">• Quem Somos</a></li>
+                         <li><a href="../contato.html" style="color:#bbb;">• Contato</a></li>
+                    </ul>
+                    <p style="font-size:0.9rem; color:#bbb; margin-top:1rem;">Baritada.Expert: O maior marketplace de <a
+                            href="../index.html" style="color:#bbb;">argamassa baritada</a> do Brasil.</p>
+                </div>
+                <div>
+                    <h3 style="color:var(--accent); font-size:1.5rem; margin-bottom:1rem;">Técnico</h3>
+                    <ul style="list-style:none; padding:0; font-size:0.9rem;">
+                        <li><a href="../rdc-330-comentada.html" style="color:#fff;">• Norma RDC 330</a></li>
+                        <li><a href="../central-do-projetista.html" style="color:#fff;">• Área do Projetista</a></li>
+                        <li><a href="../levantamento-radiometrico.html" style="color:#fff;">• Levantamento Radiométrico</a>
+                        </li>
+                        <li><a href="../barita-densidade-pureza.html" style="color:#fff;">• Densidade e Pureza</a></li>
+                        <li><a href="../erros-comuns-blindagem.html" style="color:#fff;">• Erros Comuns</a></li>
+                        <li><a href="../blindagem-industrial-end.html" style="color:#fff;">• Blindagem Industrial (END)</a></li>
+                        <li><a href="../normas-protecao-radiologica.html" style="color:#fff;">• Normas e Conformidade</a></li>
+                        <li><a href="../medicina-nuclear-radioterapia.html" style="color:#fff;">• Medicina Nuclear & PET-CT</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 style="color:var(--accent); font-size:1.5rem; margin-bottom:1rem;">Logística & Setores</h3>
+                    <ul style="list-style:none; padding:0; font-size:0.9rem;">
+                        <li><a href="../entrega-brasil.html" style="color:#fff;">• Entrega Brasil</a></li>
+                        <li><a href="../raio-x-veterinario.html" style="color:#fff;">• Veterinária</a></li>
+                        <li><a href="../raio-x-odontologico.html" style="color:#fff;">• Odontologia</a></li>
+                        <li><a href="../treinamento-pedreiro.html" style="color:#a5d6a7;">• Guia do Pedreiro</a></li>
+                    </ul>
+                </div>
+            </div>
+            <p class="copyright" style="margin-top:2rem; border-top:1px solid #444; padding-top:1rem;">&copy; 2024
+                Baritada.Expert. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="../js/cart.js"></script>
+    <script>
+        // Handle checkout form submit
+        function handleCheckout(e) {
+            e.preventDefault();
+
+            const cart = Cart.getAll();
+            if (cart.length === 0) {
+                alert('Seu carrinho está vazio.');
+                return;
+            }
+
+            const nome = document.getElementById('nome').value;
+            const whatsapp = document.getElementById('whatsapp').value;
+            const area = document.getElementById('area').value;
+            const urgencia = document.getElementById('urgencia').value;
+
+            let message = `*NOVA SOLICITAÇÃO DE ORÇAMENTO*%0A%0A`;
+            message += `*Cliente:* ${nome}%0A`;
+            message += `*WhatsApp:* ${whatsapp}%0A`;
+            if (area) message += `*Área:* ${area}m²%0A`;
+            message += `*Urgência:* ${urgencia}%0A%0A`;
+
+            message += `*ITENS DO PEDIDO:*%0A`;
+            cart.forEach(item => {
+                message += `- ${item.quantity}x ${item.title} (${item.price})%0A`;
+            });
+
+            const link = `https://wa.me/5511999999999?text=${message}`;
+            window.open(link, '_blank');
+        }
+
+        // Mobile Menu
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function () {
+            const nav = document.querySelector('.main-nav');
+            nav.style.display = (nav.style.display === 'block') ? 'none' : 'block';
+        });
+    </script>
+</body>
+
+</html>
