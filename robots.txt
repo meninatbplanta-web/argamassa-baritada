@@ -1,9 +1,14 @@
 User-agent: *
 Allow: /
 
-# Bloquear acesso a pastas de sistema se houver (opcional)
-Disallow: /admin/
-Disallow: /login/
+# Sitemap
+Sitemap: https://www.marketsite.com.br/sitemap.xml
 
-# Indicar onde está o mapa do site
-Sitemap: https://marketsite.com.br/sitemap.xml
+# Páginas prioritárias para crawling
+Allow: /index.html
+Allow: /o-que-e-argamassa-baritada.html
+Allow: /como-aplicar-argamassa-baritada.html
+Allow: /preco-argamassa-baritada.html
+Allow: /rendimento-argamassa-baritada.html
+Allow: /blindagem-radiologica.html
+Allow: /calculadora-argamassa.html
