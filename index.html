@@ -4,18 +4,18 @@
 <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Argamassa Baritada: Cotação, Manual Técnico e Laudo CNEN | Guia Definitivo</title>
+    <title>Argamassa Baritada: Soluções Técnicas e Cotação para Blindagem | Baritada Expert</title>
     <meta
-        content="A melhor Argamassa Baritada do Brasil. Densidade 3.2 g/cm³, Laudo USP/CNEN e entrega nacional. Veja rendimento, como aplicar e peça sua cotação online."
+        content="Portal técnico de proteção radiológica. Calculadora de argamassa, Memorial Descritivo Padrão e cotação com fornecedores homologados pela CNEN."
         name="description" />
     <meta
-        content="argamassa baritada, proteção radiológica, blindagem raio-x, barita, laudo cnen, rendimento argamassa baritada, como aplicar"
+        content="argamassa baritada, proteção radiológica, blindagem raio-x, calculo blindagem, laudo cnen, memorial descritivo radiologia"
         name="keywords" />
 
     <meta content="website" property="og:type" />
     <meta content="https://www.marketsite.com.br/" property="og:url" />
-    <meta content="Argamassa Baritada: O Guia Definitivo e Cotação" property="og:title" />
-    <meta content="Tudo sobre blindagem: Manual de aplicação, tabela de consumo e cotação com laudo certificado."
+    <meta content="Argamassa Baritada: Ferramentas e Cotação Técnica" property="og:title" />
+    <meta content="Calculadora de consumo, Equivalência em Chumbo e Fornecedores Certificados."
         property="og:description" />
     <meta content="https://www.marketsite.com.br/logo.png" property="og:image" />
 
@@ -154,7 +154,7 @@
             margin-bottom: 1rem;
         }
 
-        /* Formulário de Lead (Otimizado) */
+        /* Formulário de Lead */
         .lead-form {
             background: var(--white);
             padding: 2rem;
@@ -193,7 +193,18 @@
             background: var(--accent-hover);
         }
 
-        /* Elementos Técnicos (Extraídos dos outros arquivos) */
+        .btn-outline {
+            background: transparent;
+            border: 2px solid var(--primary);
+            color: var(--primary);
+        }
+
+        .btn-outline:hover {
+            background: var(--primary);
+            color: white;
+        }
+
+        /* Elementos Técnicos */
         .tech-card {
             background: var(--white);
             padding: 2rem;
@@ -219,61 +230,25 @@
             color: #2e7d32;
         }
 
-        /* Tabela de Rendimento */
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 1rem 0;
-            background: white;
+        /* Calculadora Widget */
+        .calc-widget {
+            background: #e0f2f1;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border: 1px solid #b2dfdb;
+            margin-bottom: 2rem;
         }
 
-        th {
-            background: var(--primary);
-            color: white;
-            padding: 12px;
-            text-align: left;
-        }
-
-        td {
-            padding: 12px;
-            border-bottom: 1px solid #eee;
-        }
-
-        tr:nth-child(even) {
-            background: #f9f9f9;
-        }
-
-        /* FAQ e Steps */
-        details {
+        .calc-result {
             background: var(--white);
-            margin-bottom: 10px;
-            padding: 15px;
+            padding: 1rem;
+            margin-top: 1rem;
             border-radius: 4px;
-            border: 1px solid #eee;
-        }
-
-        summary {
-            font-weight: 700;
-            cursor: pointer;
-        }
-
-        .step-item {
-            display: flex;
-            gap: 1rem;
-            margin-bottom: 1.5rem;
-        }
-
-        .step-number {
-            background: var(--primary);
-            color: white;
-            width: 30px;
-            height: 30px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
             font-weight: bold;
-            flex-shrink: 0;
+            text-align: center;
+            color: var(--primary);
+            display: none;
+            /* Escondido inicialmente */
         }
 
         /* Footer */
@@ -313,45 +288,14 @@
     "@type": "Organization",
     "name": "Baritada Expert",
     "url": "https://www.marketsite.com.br",
-    "logo": "https://www.marketsite.com.br/logo.png",
-    "contactPoint": { "@type": "ContactPoint", "telephone": "+55-11-99999-9999", "contactType": "sales" }
+    "logo": "https://www.marketsite.com.br/logo.png"
   },
   {
     "@context": "https://schema.org",
-    "@type": "Product",
-    "name": "Argamassa Baritada de Alta Densidade",
-    "description": "Argamassa para blindagem radiológica com densidade 3.2 g/cm³, certificada com laudo.",
-    "brand": { "@type": "Brand", "name": "Baritada Expert" },
-    "offers": {
-      "@type": "AggregateOffer",
-      "priceCurrency": "BRL",
-      "lowPrice": "45.00",
-      "highPrice": "85.00",
-      "offerCount": "5",
-      "availability": "https://schema.org/InStock"
-    },
-    "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "150" }
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "Qual o rendimento da argamassa baritada?",
-        "acceptedAnswer": { "@type": "Answer", "text": "O consumo é de 25kg por m² para cada 1cm de espessura. Ex: Para cobrir 10m² com 1cm, você precisa de 250kg (10 sacos)." }
-      },
-      {
-        "@type": "Question",
-        "name": "Posso adicionar areia ou cimento?",
-        "acceptedAnswer": { "@type": "Answer", "text": "NÃO. A argamassa baritada já vem pronta. Adicionar outros materiais reduz a densidade e compromete a blindagem." }
-      },
-      {
-        "@type": "Question",
-        "name": "Possui laudo certificado?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Sim, todos os lotes possuem laudo de densidade e atenuação emitidos por laboratórios credenciados (USP/IEE/CDTN), válidos para a Vigilância Sanitária." }
-      }
-    ]
+    "@type": "Service",
+    "name": "Consultoria e Venda de Proteção Radiológica",
+    "description": "Conexão com fornecedores de argamassa baritada homologados e suporte técnico para aprovação CNEN.",
+    "provider": { "@type": "Organization", "name": "Baritada Expert" }
   }
 ]
 </script>
@@ -361,12 +305,13 @@
 
     <header>
         <div class="container header-content">
-            <a href="/" class="logo">Argamassa<span> Baritada</span></a>
+            <a href="/" class="logo">Baritada<span> Expert</span></a>
             <nav>
-                <a href="#manual" style="margin-right: 15px; color: var(--primary); font-weight: 600;">Manual
-                    Técnico</a>
+                <a href="#ferramentas" style="margin-right: 15px; color: var(--primary); font-weight: 600;">Área
+                    Técnica</a>
                 <a href="#cotacao" class="btn"
-                    style="display:inline-block; width:auto; padding: 8px 15px; font-size: 0.9rem;">Pedir Cotação</a>
+                    style="display:inline-block; width:auto; padding: 8px 15px; font-size: 0.9rem;">Orçamento
+                    Técnico</a>
             </nav>
         </div>
     </header>
@@ -374,157 +319,109 @@
     <section class="hero">
         <div class="container hero-content">
             <div class="hero-text">
-                <h1>Sua Blindagem Aprovada na Primeira Vistoria</h1>
-                <p style="font-size: 1.2rem; margin-bottom: 2rem;">Argamassa Baritada de Alta Densidade (3.2 g/cm³) com
-                    Laudo Certificado. Proteção total para sua sala de Raio-X, Tomografia e Mamografia.</p>
+                <h1>Sua Obra Blindada e Aprovada na CNEN</h1>
+                <p style="font-size: 1.2rem; margin-bottom: 2rem;">Não arrisque sua clínica comprando material sem
+                    suporte. Conectamos você aos maiores especialistas em Proteção Radiológica do Brasil.</p>
 
-                <div style="display: flex; gap: 15px; flex-wrap: wrap;">
-                    <div class="success-box"
-                        style="margin:0; color: #1b5e20; background: rgba(255,255,255,0.9); font-weight: bold;">✓ Laudo
-                        USP/CNEN</div>
-                    <div class="success-box"
-                        style="margin:0; color: #1b5e20; background: rgba(255,255,255,0.9); font-weight: bold;">✓
-                        Entrega em Todo Brasil</div>
-                    <div class="success-box"
-                        style="margin:0; color: #1b5e20; background: rgba(255,255,255,0.9); font-weight: bold;">✓ Saco
-                        25kg</div>
+                <div style="display: flex; gap: 15px; flex-wrap: wrap; justify-content: center; margin-bottom: 2rem;">
+                    <div class="success-box" style="margin:0; font-weight: bold;">✓ Fornecedores Homologados</div>
+                    <div class="success-box" style="margin:0; font-weight: bold;">✓ Suporte Técnico</div>
+                    <div class="success-box" style="margin:0; font-weight: bold;">✓ Laudo de Densidade</div>
                 </div>
+
+                <a href="#calculadora" style="color: var(--accent); font-weight: bold; text-decoration: underline;">▼
+                    Precisa saber a quantidade exata? Use nossa Calculadora abaixo.</a>
             </div>
 
             <div class="lead-form" id="cotacao">
-                <h3 class="text-center" style="margin-bottom: 1rem;">Receba 3 Orçamentos Agora</h3>
+                <h3 class="text-center" style="margin-bottom: 1rem;">Falar com Especialistas</h3>
                 <form action="/enviar" method="POST">
-                    <input type="text" class="form-control" placeholder="Seu Nome ou Clínica" required>
-                    <input type="tel" class="form-control" placeholder="WhatsApp com DDD" required>
-                    <input type="number" class="form-control" placeholder="Quantidade (m²) ou Sacos">
+                    <input type="text" class="form-control" placeholder="Nome do Responsável / Clínica" required>
+                    <input type="tel" class="form-control" placeholder="WhatsApp" required>
                     <select class="form-control">
-                        <option>Urgência: Para Ontem</option>
-                        <option>Urgência: Próximos 15 dias</option>
-                        <option>Apenas Pesquisa</option>
+                        <option value="" disabled selected>O que você precisa?</option>
+                        <option>Cotação de Argamassa Baritada</option>
+                        <option>Dúvida sobre Aplicação/Traço</option>
+                        <option>Memorial Descritivo / Laudo</option>
                     </select>
-                    <button type="submit" class="btn">COTAR MELHOR PREÇO ➤</button>
-                    <p style="font-size: 0.8rem; text-align: center; color: #666; margin-top: 10px;">🔒 Resposta rápida
-                        via WhatsApp.</p>
+                    <button type="submit" class="btn">SOLICITAR CONTATO TÉCNICO ➤</button>
+                    <p style="font-size: 0.8rem; text-align: center; color: #666; margin-top: 10px;">Receba atendimento
+                        de um fornecedor certificado.</p>
                 </form>
             </div>
         </div>
     </section>
 
-    <section class="section bg-white">
+    <section class="section bg-white" id="calculadora">
         <div class="container">
             <div class="grid-2">
                 <div>
-                    <h2>A Realidade sobre a Fiscalização (RDC 611)</h2>
-                    <p>A construção de salas radiológicas é regida pela <strong>Norma RDC 611 da ANVISA</strong> e
-                        diretrizes da CNEN.</p>
-                    <p>O fiscal não aceita apenas "paredes grossas". Ele exige:</p>
-                    <ul>
-                        <li><strong>Memorial de Cálculo de Blindagem</strong> (assinado por Físico).</li>
-                        <li><strong>Laudo de Densidade</strong> do material aplicado.</li>
-                        <li><strong>Levantamento Radiométrico</strong> pós-obra.</li>
-                    </ul>
-                    <div class="alert-box">
-                        <strong>⚠️ Risco Real:</strong> Usar argamassa sem laudo ou "batizada" com areia pode resultar
-                        no embargo da sua clínica e na necessidade de demolir e refazer toda a blindagem.
+                    <h2>Calculadora de Quantidade</h2>
+                    <p>Evite sobras e falta de material. O cálculo baseia-se na densidade padrão de 3.2 g/cm³ (25kg/m²
+                        por cm de espessura).</p>
+
+                    <div class="calc-widget">
+                        <label style="font-weight:bold; display:block; margin-bottom:5px;">Área total das Paredes
+                            (m²):</label>
+                        <input type="number" id="calc-area" class="form-control" placeholder="Ex: 30">
+
+                        <label style="font-weight:bold; display:block; margin-bottom:5px;">Espessura da Blindagem
+                            (cm):</label>
+                        <select id="calc-espessura" class="form-control">
+                            <option value="1.0">1.0 cm (Padrão)</option>
+                            <option value="1.5">1.5 cm</option>
+                            <option value="2.0">2.0 cm</option>
+                            <option value="2.5">2.5 cm</option>
+                        </select>
+
+                        <button onclick="calcularArgamassa()" class="btn" style="background:var(--primary);">CALCULAR
+                            AGORA</button>
+
+                        <div id="calc-resultado" class="calc-result"></div>
                     </div>
                 </div>
-                <div>
-                    <h3>🚫 3 Erros Fatais na Obra</h3>
-                    <div class="step-item">
-                        <div class="step-number">1</div>
-                        <div>
-                            <strong>Adicionar Cimento/Areia:</strong><br>
-                            Nunca faça isso. A argamassa baritada já vem com o traço perfeito. Adicionar "liga" dilui o
-                            Bário e deixa a radiação vazar.
-                        </div>
-                    </div>
-                    <div class="step-item">
-                        <div class="step-number">2</div>
-                        <div>
-                            <strong>Camadas muito Grossas:</strong><br>
-                            A barita é pesada. Aplicar mais de 1,5cm de uma vez faz a massa "descer" e criar barriga.
-                            Faça em camadas.
-                        </div>
-                    </div>
-                    <div class="step-item">
-                        <div class="step-number">3</div>
-                        <div>
-                            <strong>Esquecer a Cura:</strong><br>
-                            Se não molhar a parede nos primeiros 3 dias, ela vai trincar. E trinca = vazamento de
-                            radiação.
-                        </div>
-                    </div>
+
+                <div class="tech-card" style="border-top-color: var(--error);">
+                    <h3>⚠️ Por que não comprar em Home Center?</h3>
+                    <p>Grandes lojas de varejo vendem argamassa como um produto comum, sem o suporte técnico que uma
+                        sala de Raio-X exige.</p>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin-bottom: 10px;">❌ <strong>Sem Laudo Específico:</strong> Muitas vezes o lote
+                            não tem rastreabilidade para a CNEN.</li>
+                        <li style="margin-bottom: 10px;">❌ <strong>Armazenamento Incorreto:</strong> Sacos rasgados ou
+                            úmidos perdem a eficácia.</li>
+                        <li style="margin-bottom: 10px;">✅ <strong>Com Especialistas:</strong> Você recebe o Laudo de
+                            Densidade, Nota Fiscal Técnica e instruções de traço corretas.</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="section bg-light" id="manual">
+    <section class="section bg-light" id="ferramentas">
         <div class="container">
-            <h2 class="text-center">Manual Técnico Completo</h2>
-            <p class="text-center" style="max-width: 800px; margin: 0 auto 3rem auto;">Tudo o que seu pedreiro e
-                engenheiro precisam saber. Informações extraídas dos manuais dos maiores fabricantes.</p>
+            <h2 class="text-center">Central do Projetista e Engenheiro</h2>
+            <p class="text-center" style="margin-bottom: 3rem;">Ferramentas essenciais para garantir a conformidade da
+                sua obra.</p>
 
             <div class="grid-3">
                 <div class="tech-card">
-                    <h3>📊 Tabela de Rendimento</h3>
-                    <p>Baseado na densidade padrão de 3.2 g/cm³.</p>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Espessura</th>
-                                <th>Consumo / m²</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>1,0 cm</td>
-                                <td>25 kg (1 saco)</td>
-                            </tr>
-                            <tr>
-                                <td>1,5 cm</td>
-                                <td>37,5 kg (1,5 sacos)</td>
-                            </tr>
-                            <tr>
-                                <td>2,0 cm</td>
-                                <td>50 kg (2 sacos)</td>
-                            </tr>
-                            <tr>
-                                <td>2,5 cm</td>
-                                <td>62,5 kg (2,5 sacos)</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <p style="font-size: 0.9rem;"><strong>Dica:</strong> Compre sempre 10% a mais para recortes.</p>
-                    <a href="calculadora-argamassa.html"
-                        style="color: var(--accent); font-weight: bold; text-decoration: underline;">Usar Calculadora
-                        Automática</a>
+                    <h3>📄 Memorial Descritivo Padrão</h3>
+                    <p>Modelo de texto para incluir no projeto arquitetônico, especificando o uso de Argamassa Baritada
+                        conforme norma.</p>
+                    <a href="central-do-projetista.html" class="btn btn-outline">VER MODELO ➤</a>
                 </div>
 
-                <div class="tech-card" style="grid-column: span 2;">
-                    <h3>🛠️ Como Aplicar (Passo a Passo)</h3>
-                    <div class="step-item">
-                        <div class="step-number">1</div>
-                        <div><strong>Preparo da Base:</strong> A parede (tijolo ou bloco) deve estar limpa. É
-                            <u>obrigatório</u> usar chapisco grosso (cimento:areia 1:3) com aditivo de aderência (ex:
-                            Bianco) para segurar o peso.</div>
-                    </div>
-                    <div class="step-item">
-                        <div class="step-number">2</div>
-                        <div><strong>Aplicação em Drywall:</strong> Use apenas placas Cimentícias ou RF (Rosa).
-                            Recomenda-se fixar tela metálica na placa para ancoragem mecânica da argamassa.</div>
-                    </div>
-                    <div class="step-item">
-                        <div class="step-number">3</div>
-                        <div><strong>Aplicação em Camadas:</strong> Aplique no máximo 1,5cm por demão. Se o projeto
-                            pedir 2cm, faça 1cm, espere secar (ranhe a superfície) e aplique o restante no dia seguinte.
-                        </div>
-                    </div>
-                    <div class="step-item">
-                        <div class="step-number">4</div>
-                        <div><strong>Acabamento:</strong> Após a secagem e cura úmida (3 dias), pode-se aplicar massa
-                            corrida e pintura acrílica normalmente.</div>
-                    </div>
+                <div class="tech-card">
+                    <h3>☢️ Equivalência em Chumbo</h3>
+                    <p>Tabela de conversão: Quanto de argamassa equivale a 1mm ou 2mm de Chumbo?</p>
+                    <a href="central-do-projetista.html#equivalencia" class="btn btn-outline">CONSULTAR TABELA ➤</a>
+                </div>
+
+                <div class="tech-card">
+                    <h3>📋 Checklist CNEN</h3>
+                    <p>Verifique se sua sala cumpre os requisitos básicos da RDC 611 antes da vistoria.</p>
+                    <a href="checklist-aprovacao-cnen.html" class="btn btn-outline">ABRIR CHECKLIST ➤</a>
                 </div>
             </div>
         </div>
@@ -532,34 +429,20 @@
 
     <section class="section bg-white">
         <div class="container" style="max-width: 800px;">
-            <h2 class="text-center">Perguntas Frequentes</h2>
+            <h2 class="text-center">Dúvidas Técnicas</h2>
 
-            <details itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                <summary itemprop="name">Qual o preço do saco de argamassa baritada?</summary>
-                <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                    <p itemprop="text">O preço varia entre R$ 45,00 e R$ 85,00 por saco de 20kg ou 25kg, dependendo da
-                        cotação da barita, da localização da obra e da quantidade. <a href="#cotacao">Peça uma cotação
-                            aqui</a> para ter o valor exato hoje.</p>
-                </div>
+            <details>
+                <summary>A argamassa substitui o chumbo em todas as paredes?</summary>
+                <p style="padding-top:10px;">Sim, para a maioria das energias de diagnóstico (Raio-X, Tomografia,
+                    Mamografia). A argamassa é estrutural e evita o uso de chapas caras, exceto em portas e biombos
+                    móveis.</p>
             </details>
 
-            <details itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                <summary itemprop="name">Argamassa baritada ou Lençol de Chumbo: Qual o melhor?</summary>
-                <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                    <p itemprop="text">Para paredes de alvenaria, a <strong>argamassa baritada</strong> é muito mais
-                        barata (cerca de 50% do custo) e ecológica. O chumbo é recomendado apenas para portas, biombos
-                        ou situações onde não se pode aumentar a espessura da parede.</p>
-                </div>
-            </details>
-
-            <details itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                <summary itemprop="name">Vocês entregam em quais cidades?</summary>
-                <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                    <p itemprop="text">Atendemos todo o território nacional através de transportadoras parceiras. Temos
-                        rotas frequentes para <a href="argamassa-baritada-sao-paulo.html">São Paulo</a>, <a
-                            href="argamassa-baritada-rio-de-janeiro.html">Rio de Janeiro</a>, <a
-                            href="argamassa-baritada-belo-horizonte.html">Minas Gerais</a> e capitas do Nordeste.</p>
-                </div>
+            <details>
+                <summary>Qual a validade do Laudo de Densidade?</summary>
+                <p style="padding-top:10px;">O Laudo deve ser referente ao lote fabricado. Por isso, comprar de
+                    revendedores rotativos (como grandes lojas) é arriscado, pois o laudo pode ser antigo. Nossos
+                    parceiros emitem laudo fresco por lote.</p>
             </details>
         </div>
     </section>
@@ -569,27 +452,48 @@
             <div class="grid-3" style="text-align: left;">
                 <div>
                     <h4 style="color: var(--accent);">Baritada Expert</h4>
-                    <p style="font-size: 0.9rem; color: #999;">O maior portal de cotação e informação técnica sobre
-                        proteção radiológica do Brasil.</p>
+                    <p style="font-size: 0.9rem; color: #999;">Conectando sua obra aos melhores fornecedores técnicos do
+                        Brasil.</p>
                 </div>
                 <div>
-                    <h4 style="color: var(--accent);">Links Úteis</h4>
+                    <h4 style="color: var(--accent);">Acesso Rápido</h4>
                     <ul style="list-style: none; padding: 0; font-size: 0.9rem;">
-                        <li><a href="calculadora-argamassa.html">Calculadora de Consumo</a></li>
-                        <li><a href="rdc-330-comentada.html">Norma RDC 611/330</a></li>
-                        <li><a href="blindagem-radiologica.html">O que é Blindagem?</a></li>
+                        <li><a href="calculadora-argamassa.html">Calculadora Avançada</a></li>
+                        <li><a href="rdc-330-comentada.html">Normas ANVISA</a></li>
                     </ul>
                 </div>
                 <div>
                     <h4 style="color: var(--accent);">Contato</h4>
-                    <p style="font-size: 0.9rem; color: #999;">vendas@marketsite.com.br<br>São Paulo - SP</p>
+                    <p style="font-size: 0.9rem; color: #999;">comercial@marketsite.com.br</p>
                 </div>
             </div>
-            <p class="text-center" style="margin-top: 2rem; color: #555; font-size: 0.8rem;">© 2025 Baritada Expert.
-                Todos os direitos reservados.</p>
+            <p class="text-center" style="margin-top: 2rem; color: #555; font-size: 0.8rem;">© 2025 Baritada Expert.</p>
         </div>
     </footer>
 
+    <script>
+        function calcularArgamassa() {
+            const area = parseFloat(document.getElementById('calc-area').value);
+            const espessura = parseFloat(document.getElementById('calc-espessura').value);
+
+            if (!area || !espessura) {
+                alert("Por favor, preencha a área corretamente.");
+                return;
+            }
+
+            // Fórmula: Área * Espessura * 25kg
+            const pesoTotal = area * espessura * 25;
+            const sacos = Math.ceil(pesoTotal / 25); // Assumindo sacos de 25kg
+
+            const resultadoDiv = document.getElementById('calc-resultado');
+            resultadoDiv.style.display = 'block';
+            resultadoDiv.innerHTML = `
+                <span style="font-size:1.2rem; color:#333;">Resultado Estimado:</span><br>
+                ${pesoTotal} kg de Argamassa<br>
+                <span style="font-size:1.5rem; color:var(--accent);">${sacos} Sacos de 25kg</span>
+            `;
+        }
+    </script>
 </body>
 
 </html>
